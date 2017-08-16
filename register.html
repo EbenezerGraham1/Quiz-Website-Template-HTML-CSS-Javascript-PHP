@@ -1,0 +1,125 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Register</title>
+<link href="css/stylesheet.css" rel="stylesheet" type="text/css">
+<script src="js/functions.js" rel="javascript" type="text/javascript"></script>
+<link href="images/icons/ALU-Learn_fav.png" rel="icon" type="image/png">
+</head>
+<body>
+<header>
+   <progress value="0" max="6" id="progress-time"></progress>
+    <div id="top" ></div>
+    <div class="main_menu">
+        <div id="pages">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                
+                <li> <a href="#">MODULES</a>
+                    <ul>
+                        <li><a href="introduction-to-networking.html"><span><img src="images/icons/networking_filled-50.png" class="icons"></span>Introduction to Networking</a></li>
+                        <li><a href="software-engineering.html"><span><img src="images/icons/software_engineering_filled-50.png" class="icons"></span>Software Engineering</a></li>
+                        <li><a href="programming-one-java.html"><span><img src="images/icons/programming_filled-50.png" class="icons"></span>Programming One</a></li>
+                        <li><a href="mathematics-for-computing.html"><span><img src="images/icons/math_filled-50.png" class="icons"></span>Mathematics for computing</a></li>
+                        <li></li>
+                    </ul>
+                </li>
+                <li><a href="quiz-platform.html">QUIZ PLATFORM</a></li>
+                <li><a href="index.html#homefooter">CONTACT MODULE LEADER</a></li>
+            </ul>
+        </div>
+        <div id="logo"> <a href="index.html"><img class="logo" src="Images/icons/alu_learn.png" alt="ALU LEARN"/></a> </div>
+    </div>
+</header>
+<aside>
+    <nav class="side_menu">
+        <button id="toggle">&#9664;</button>
+        <h4>MODULES</h4>
+        <ul>
+            <li><a href="introduction-to-networking.html"><span><img src="images/icons/networking_filled-50.png" class="icons"></span>Introduction to Networking</a>
+                <ul>
+                    <li><a href="#" id="quiz1" class="quiz_links"><span><img src="images/icons/quiz_filled-50.png" class="icons"></span>Quiz 1 : Network Access</a></li>
+                    <li><a href="#" id="quiz2" class="quiz_links"><span><img src="images/icons/quiz_filled-50.png" class="icons"></span>Quiz 2 : Ethernet</a></li>
+                    <li><a href="#" id="quiz3" class="quiz_links"><span><img src="images/icons/quiz_filled-50.png" class="icons"></span>Quiz 3 : Network Layer</a></li>
+                </ul>
+            </li>
+            <li><a href="software-engineering.html"><span><img src="images/icons/software_engineering_filled-50.png" class="icons"></span>Software Engineering</a>
+                <ul>
+                    <li><a href="#" ><span><img src="images/icons/quiz_filled-50.png" class="icons"></span>Quiz under construction</a></li>
+                    <li><a href="#" ><span><img src="images/icons/quiz_filled-50.png" class="icons"></span>Quiz under construction</a></li>
+                    <li><a href="#" ><span><img src="images/icons/quiz_filled-50.png" class="icons"></span>Quiz under construction</a></li>
+                </ul>
+            </li>
+            <li><a href="programming-one-java.html"><span><img src="images/icons/programming_filled-50.png" class="icons"></span>Programming One</a>
+                <ul>
+                    <li><a href="#" ><span><img src="images/icons/quiz_filled-50.png" class="icons"></span>Quiz under construction</a></li>
+                    <li><a href="#" ><span><img src="images/icons/quiz_filled-50.png" class="icons"></span>Quiz under construction</a></li>
+                    <li><a href="#" ><span><img src="images/icons/quiz_filled-50.png" class="icons"></span>Quiz under construction</a></li>
+                </ul>
+            </li>
+            <li><a href="mathematics-for-computing.html"><span><img src="images/icons/math_filled-50.png" class="icons"></span>Mathematics for computing</a>
+                <ul>
+                    <li><a href="#" ><span><img src="images/icons/quiz_filled-50.png" class="icons"></span>Quiz under construction</a></li>
+                    <li><a href="#" ><span><img src="images/icons/quiz_filled-50.png" class="icons"></span>Quiz under construction</a></li>
+                    <li><a href="#" ><span><img src="images/icons/quiz_filled-50.png" class="icons"></span>Quiz under construction</a></li>
+                </ul>
+            </li>
+        </ul>
+        <hr>
+        <h4>QUICK LINKS</h4>
+        <ul>
+            <li ><a href="index.html#homefooter" class="test"><span><img src="images/icons/feedback_filled-50.png" class="icons"></span>Contact Module Leader</a></li>
+        </ul>
+    </nav>
+</aside>
+<aside class="board">
+    <div class="score_board" id="marks">
+        <p id="marks_value"></p>  
+    </div>
+     <progress value="0" max="6" id="progress"></progress>
+    <div class="score_board" id="stopwatch">
+        
+        <p id="time"> 2:00</p>
+    </div>
+    <div class="score_board" id="feedback_board"></div>
+</aside>
+<aside>
+<main class="al_quiz_container">
+    <div id="container_header">
+        <h3 id="platform-title">Register</h3>
+    </div>
+
+        <div id="quiz"><form action="register.php" method="post">
+    <label><b>First name</b></label>
+    <input type="text" placeholder="Enter first name" name="firstname" required>
+
+    <label><b>Last name</b></label>
+    <input type="text" placeholder="Enter Last name" name="lastname" required>
+
+    <label><b>GCU Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" required>
+
+    <input type="radio" name="category" value="Student" class="answers"> Student
+
+    <input type="radio" name="category" value="Lecturer" class="answers"> Lecturer <br><br>
+
+    <label><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="password" required>
+
+    <label><b>Retype Password</b></label>
+    <input type="password" placeholder="Repeat Password" name="retype_password" required>
+    
+    <div class="regbutton">
+      <button type="submit" class="solid_button">Sign Up</button>
+      <button type="button"  class="solid_button">Cancel</button>
+    </div>
+</form></div>
+    </aside>
+</main>
+<div class="top">
+    <a href="#top">&#10171;</a>
+</div>
+</body>
+<footer></footer>
+</html>
